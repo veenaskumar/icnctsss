@@ -5,6 +5,7 @@ import { About } from "./Components/About";
 import { Committee } from "./Components/Committee";
 import { ImportantDates } from "./Components/ImportantDates";
 import { Workshop } from "./Components/Workshop";
+import { Keynotes } from "./Components/Keynotes";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="committee" element={<Committee />} />
           <Route path="impdates" element={<ImportantDates />} />
           <Route path="workshop" element={<Workshop />} />
+          <Route path="keynotes" element={<Keynotes />} />
         </Route>
       </Routes>
     </>

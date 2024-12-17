@@ -1,6 +1,6 @@
 import React from "react";
 import "../Stylesheet/Navbar.css";
-
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <div className="lg:mx-[70px]">
@@ -37,25 +37,39 @@ export const Navbar = () => {
               <ul className="menu menu-horizontal text-black nav-item text-navItem">
                 {/* Navbar menu content here */}
                 <li>
-                  <a className="hover:bg-transparent">Home</a>
+                  <a className="hover:bg-transparent">
+                    <Link to="/">Home</Link>
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:bg-transparent">About KEC</a>
+                  <a className="hover:bg-transparent">
+                    <Link to="/about">About KEC</Link>
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:bg-transparent">Committee</a>
+                  <a className="hover:bg-transparent">
+                    <Link to="/committee">Committee</Link>
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:bg-transparent">Keynote Talks</a>
+                  <a className="hover:bg-transparent">
+                    <Link to="/keynotes">Keynote Talks</Link>
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:bg-transparent">Call For Papers</a>
+                  <a className="hover:bg-transparent">
+                    <Link>Call For Papers</Link>
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:bg-transparent">Important Dates</a>
+                  <a className="hover:bg-transparent">
+                    <Link to="/impdates">Important Dates</Link>
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:bg-transparent">Workshops</a>
+                  <a className="hover:bg-transparent">
+                    <Link to="/workshop">Workshops</Link>
+                  </a>
                 </li>
                 {/*  <li>
                   <details>
