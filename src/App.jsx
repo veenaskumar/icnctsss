@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import { MainLayout } from "./Layout/MainLayout";
-import { Home } from "./Components/Home";
-import { About } from "./Components/About";
-import { Committee } from "./Components/Committee";
-import { ImportantDates } from "./Components/ImportantDates";
-import { Workshop } from "./Components/Workshop";
-import { Keynotes } from "./Components/Keynotes";
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
+import { Committee } from "./Pages/Committee";
+import { ImportantDates } from "./Pages/ImportantDates";
+import { Workshop } from "./Pages/Workshop";
+import { Keynotes } from "./Pages/Keynotes";
 function App() {
   return (
     <>

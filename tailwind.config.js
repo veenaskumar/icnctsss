@@ -27,6 +27,10 @@ module.exports = {
       colors: {
         primary: "#3182ce", // Your primary color
       },
+      backgroundImage: {
+        conferenceHome:
+          'url( "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Jz10N_W1SOv6hpHJMlJUtQHaED%26pid%3DApi&f=1&ipt=876eb177006364e2de9f754450b53c1ef2589140f86a8558ed388c2dac14e658&ipo=images" )',
+      },
     },
     daisyui: {
       themes: ["light", "dark", "cupcake"],
