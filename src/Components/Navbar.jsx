@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Stylesheet/Navbar.css";
 import { NavLink } from "react-router-dom";
 import icnctss from "../Assets/ICNCTSSS Logo new.png";
 import keclogo from "../Assets/kec_logo2.png";
 
 export const Navbar = () => {
+  const [close, setclose] = useState(false);
+  const handleClose = () => {
+    setclose(true);
+  };
   return (
     <div className="bg-[#074799] lg:h-[230px] h-[80px] lg:mx-[100px]">
       <div className="lg:flex lg:justify-evenly lg:items-center">
@@ -88,7 +92,7 @@ export const Navbar = () => {
                       </NavLink>
                     </a>
                   </li>
-                  <li>
+                  {/*  <li>
                     <a className="hover:bg-transparent">
                       <NavLink
                         to="/about"
@@ -99,6 +103,34 @@ export const Navbar = () => {
                         About KEC
                       </NavLink>
                     </a>
+                  </li> */}
+                  <li className="z-10 text-black">
+                    <details>
+                      <summary className="text-white">About</summary>
+                      <ul className={`bg-base-100 rounded-t-none p-2`}>
+                        <li className="dropdown-nav">
+                          <NavLink
+                            to="/aboutkec"
+                            className={({ isActive }) =>
+                              isActive ? "text-[#074799]" : ""
+                            }
+                            onClick={handleClose}
+                          >
+                            KEC
+                          </NavLink>
+                        </li>
+                        <li className="dropdown-nav">
+                          <NavLink
+                            to="/abouticnctsss"
+                            className={({ isActive }) =>
+                              isActive ? "text-[#074799]" : ""
+                            }
+                          >
+                            ICNCTSSS
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </details>
                   </li>
                   <li>
                     <a className="hover:bg-transparent">
@@ -138,18 +170,6 @@ export const Navbar = () => {
                         }
                       >
                         Important Dates
-                      </NavLink>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="hover:bg-transparent">
-                      <NavLink
-                        to="/workshop"
-                        className={({ isActive }) =>
-                          isActive ? "text-[#64ffda]" : ""
-                        }
-                      >
-                        Workshops
                       </NavLink>
                     </a>
                   </li>
@@ -209,9 +229,6 @@ export const Navbar = () => {
               </li>
               <li>
                 <a className="hover:bg-transparent">Important Dates</a>
-              </li>
-              <li>
-                <a className="hover:bg-transparent">Workshops</a>
               </li>
               {/*  <li>
                   <details>

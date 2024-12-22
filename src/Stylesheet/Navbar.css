@@ -17,13 +17,19 @@
 }
 .nav-item > li > a:active {
   background-color: transparent !important;
-  color: black !important;
+  color: white !important;
 }
-summary:active {
+li > details > summary:active {
+  background-color: transparent !important;
+  color: white !important;
+}
+li > details > summary:hover {
+  background-color: transparent !important;
+}
+.dropdown-nav :hover {
   background-color: transparent !important;
   color: black !important;
 }
-
 .sm-nav-item > li > a:active {
   background-color: transparent !important;
   color: black !important;
