@@ -6,17 +6,42 @@ import { AboutICNCTSSS } from "./Pages/AboutICNCTSSS";
 import { Committee } from "./Pages/Committee";
 import { ImportantDates } from "./Pages/ImportantDates";
 import { Keynotes } from "./Pages/Keynotes";
+const routes = [
+  {
+    path: "/",
+    element: <Home />,
+    index: true,
+  },
+  {
+    path: "/aboutkec",
+    element: <AboutKEC />,
+  },
+  {
+    path: "abouticnctsss",
+    element: <AboutICNCTSSS />,
+  },
+  {
+    path: "committee",
+    element: <Committee />,
+  },
+  {
+    path: "impdates",
+    element: <ImportantDates />,
+  },
+];
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
-          <Route path="aboutkec" element={<AboutKEC />} />
-          <Route path="abouticnctsss" element={<AboutICNCTSSS />} />
-          <Route path="committee" element={<Committee />} />
-          <Route path="impdates" element={<ImportantDates />} />
-          <Route path="keynotes" element={<Keynotes />} />
+          {routes.map((item) => (
+            <Route
+              key={item.path}
+              path={item.path}
+              index={item.index}
+              element={item.element}
+            />
+          ))}
         </Route>
       </Routes>
     </>

@@ -3,6 +3,7 @@ import Abouticnctsss from "../Assets/abouticnctsss.webp";
 import { FaCheck } from "react-icons/fa";
 import Data from "../Assets/Data/workshop";
 import { WorkshopCards } from "../Components/WorkshopCards";
+
 export const AboutICNCTSSS = () => {
   return (
     <>
