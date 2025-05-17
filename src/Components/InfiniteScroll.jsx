@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import Scopus from "../Assets/Scopus_JPG.avif";
+
 export const InfiniteScroll = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-[2rem]">

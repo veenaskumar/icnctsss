@@ -5,7 +5,7 @@ import { AboutKEC } from "./Pages/AboutKEC";
 import { AboutICNCTSSS } from "./Pages/AboutICNCTSSS";
 import { Committee } from "./Pages/Committee";
 import { ImportantDates } from "./Pages/ImportantDates";
-import { Keynotes } from "./Pages/Keynotes";
+
 const routes = [
   {
     path: "/",
